@@ -1,0 +1,24 @@
+<!-- Login via serviço do tamplete -->
+<po-page-login *ngIf="loginTamlateService"
+  [p-authentication-url]="authenticationUrl"
+  [p-authentication-type]="authenticationType"
+  [p-languages]="languages"
+  [p-logo]="logo"
+  [p-hide-remember-user]="true"
+  p-register-url="/user/new"
+>
+</po-page-login>
+
+<!-- Login via serviço do local -->
+<po-page-login *ngIf="!loginTamlateService"
+  [p-login-errors]="loginErrors"
+  [p-password-errors]="passwordErrors"
+  [p-languages]="languages"
+  [p-logo]="logo"
+  [p-hide-remember-user]="true"
+  p-register-url="/user/new"
+  (p-login-change)="loginChange()"
+  (p-login-submit)="checkLogin($event)"
+  (p-password-change)="passwordChange()"
+>
+</po-page-login>

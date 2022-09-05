@@ -22,6 +22,18 @@ export class AppComponent implements OnInit {
       link: '/user',
       shortLabel: 'Usuários',
     },
+    {
+      icon: 'po-icon po-icon-user',
+      label: 'Login',
+      link: '/login',
+      shortLabel: 'Login',
+    },
+    {
+      icon: 'po-icon po-icon-exit',
+      label: 'Logout',
+      link: '/login',
+      shortLabel: 'Logout',
+    },
   ];
 
   logo = './assets/images/po_color_font.png';
