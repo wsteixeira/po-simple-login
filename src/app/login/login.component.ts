@@ -6,7 +6,7 @@ import {
   PoPageLogin,
   PoPageLoginAuthenticationType,
 } from '@po-ui/ng-templates';
-import { AuthService } from 'src/app/guard/auth.service';
+import { AuthService } from '../guard/auth.service';
 
 import { LoginService } from './login.service';
 import { Buffer } from 'buffer';
